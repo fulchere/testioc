@@ -1,0 +1,46 @@
+OutTerminator = LF;
+InTerminator = CR LF;
+ReplyTimeout = 10000;
+
+getLED {
+    out "g led";
+    in "%d";
+}
+
+setLED {
+    out "s led %d";
+    in "OK";
+}
+
+getSPD {
+    out "g spd";
+    in "%d RPM";
+}
+
+setSPD {
+    out "s spd %d";
+    in "OK";
+}
+
+getPOS {
+    out "g pos";
+    in "%d steps";
+}
+
+setPOS {
+    out "s pos %d";
+    in "OK";
+}
+
+getTEM {
+    out "g tem";
+    in "%f C";
+}
+
+getHUM {
+    out "g hum";
+    in "%f \%";
+}
+
+
+

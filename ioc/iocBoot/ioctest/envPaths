@@ -1,0 +1,5 @@
+epicsEnvSet("IOC","ioctest")
+epicsEnvSet("TOP","/home/fulcher/Desktop/ioc")
+epicsEnvSet("STREAM","/usr/lib/epics")
+epicsEnvSet("ASYN","/usr/lib/epics")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

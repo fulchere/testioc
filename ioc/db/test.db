@@ -1,0 +1,59 @@
+record(bi, "getled") {
+    field(DESC, "this is a record for get led")
+    field(PINI, YES)
+    field(DTYP, "stream")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+    field(INP,  "@test.proto getLED dev1")
+}
+
+record(bo, "setled") {
+    field(DESC, "this is a record for set led")
+    field(DTYP, "stream")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+    field(OUT,  "@test.proto setLED dev1")
+    field(FLNK, "getled PP")
+}
+
+record(ai, "getspd") {
+    field(DESC, "this is a record for get spd")
+    field(PINI, YES)
+    field(DTYP, "stream")
+    field(INP,  "@test.proto getSPD dev1")
+}
+
+record(ao, "setspd") {
+    field(DESC, "this is a record for set spd")
+    field(DTYP, "stream")
+    field(OUT,  "@test.proto setSPD dev1")
+    field(FLNK, "getspd PP")
+}
+
+record(ai, "getpos") {
+    field(DESC, "this is a record for get pos")
+    field(PINI, YES)
+    field(DTYP, "stream")
+    field(INP,  "@test.proto getPOS dev1")
+}
+
+record(ao, "setpos") {
+    field(DESC, "this is a record for set pos")
+    field(DTYP, "stream")
+    field(OUT,  "@test.proto setPOS dev1")
+    field(FLNK, "getpos PP")
+}
+
+record(ai, "gettem") {
+    field(DESC, "this is a record for get tem")
+    field(PINI, YES)
+    field(DTYP, "stream")
+    field(INP,  "@test.proto getTEM dev1")
+}
+
+record(ai, "gethum") {
+    field(DESC, "this is a record for get hum")
+    field(PINI, YES)
+    field(DTYP, "stream")
+    field(INP,  "@test.proto getHUM dev1")
+}
